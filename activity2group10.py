@@ -42,7 +42,7 @@ def code():
   print("Select the conversion direction:\n1. AED to other currencies\n2. Other currencies to AED\n3. Exit")
   print()
   print()
-  money=int(input("Enter your amount you want to convert:"))
+  money=float(input("Enter your amount you want to convert:"))
   choice=int(input("Enter your choice (1/2/3):"))
   #If the user chooses a choice then specific sub choices appear
   if choice==1:
@@ -103,5 +103,3 @@ def main():
 
 
 main()
-
-
