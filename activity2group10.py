@@ -1,42 +1,54 @@
-#exit: program is exit, docstrings, what are the constants, fix the else error (Invalid Input)
+'''https://github.com/THEFO0L1/group-10/blob/main/group10-activity-2.py''' '''ahmad abolhusain'''
+'''https://github.com/CjDubaiRIT/GROUP-10.git''' '''CJ'''
+'''github link here''' '''Shuja Ahmad'''
 
 
-'''github link here''' '''name here'''
-'''github link here''' '''name here'''
-'''github link here''' '''name here'''
 
 
-#loops and use of constants
+#start by defining functions and constants for the currency conversion
 def aed_to_britishPound(money):
-  return money*0.2147
+   dirhams_gbp=0.2154
+   return money*dirhams_gbp
 def aed_to_dollar(money):
-  return money*0.2722
+  dirhams_dollar=0.2722
+  return money*dirhams_dollar
 def aed_to_eur(money):
-  return money*0.2513
+  dirhams_euro=0.2513
+  return money*dirhams_euro
 def eur_to_aed(money):
-  return money*4
+  euro_dirhams=4
+  return money*euro_dirhams
 def britishPound_to_aed(money):
-  return money*4.66
+  gbp_dirhams=4.66
+  return money*gbp_dirhams
 def dollar_to_aed(money):
-  return money*3.67
+  dollar_dirhams=3.67
+  return money*dollar_dirhams
 
 
 
 
+
+
+#Define function as 'code'
 def code():
+  #Welcome Message when the currency converter starts
   print('"   Main Menu"')
   print("Welcome to Currency Converter")
   print()
   print("------------------------")
   print()
+  #Ask the user whether the currency has to be converted from AED or to AED or exit the program
   print("Select the conversion direction:\n1. AED to other currencies\n2. Other currencies to AED\n3. Exit")
   print()
   print()
   money=int(input("Enter your amount you want to convert:"))
   choice=int(input("Enter your choice (1/2/3):"))
+  #If the user chooses a choice then specific sub choices appear
   if choice==1:
       print("1. AED to Euro (EUR)\n2. AED to British Pound (GBP)\n3. AED to US Dollar\n4. AED to Exit")
       subchoice=int(input("Enter the Sub choice of currency:"))
+      #If statements are used to give the output for choices and subchoices
       if subchoice==1:
           print(money,"AED is equal to",aed_to_eur(money),"EUR")
       elif subchoice==2:
@@ -44,7 +56,9 @@ def code():
       elif subchoice==3:
           print(money,"AED is equal to",aed_to_dollar(money),"USD")
       elif subchoice==4:
+          print("Thank you for working with us today!")
           exit()
+      #If a number is entered which does not exist in the subchoices the program will print "Invalid Input!"
       else:
           print("Invalid choice")
   if choice==2:
@@ -57,34 +71,37 @@ def code():
       elif subchoice==3:
           print(money,"USD is equal to",dollar_to_aed(money),"AED")
       elif subchoice==4:
+          print("Thank you for working with us today!")
           exit()
+      #If a number is entered which does not exist in the subchoices the program will print "Invalid choice!"
       else:
           print("Invalid choice!")
   if choice==3:
+      print("Thank you for working with us today!")
       exit()
 
 
 
 
+  #If the user enters choice as any number less than 1 or more than 3 it prints "Invalid choice!"
   elif choice>3 or choice<1:
-    print("Invalid choice") 
-    '''the else error (Invalid Input) was on this line like this choice>1 '''
+       print("Invalid choice")
 def main():
+  code()
+  #While loop is used here to run the function again if the user chooses to do so
   while True:
-      code()
       again=input("Do you want to continue(y/n):")
-      if again=='y':
+      while True:
+        if again=='y':
           code()
-      elif again=='n':
-          print("Program is exit")
+        elif again=='n':
+          print("Thank you for working with us today!")
           exit()
+        break
 
 
 
 
 main()
-
-
-
 
 
