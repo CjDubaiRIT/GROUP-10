@@ -1,6 +1,6 @@
 '''https://github.com/THEFO0L1/group-10/blob/main/group10-activity-2.py''' '''ahmad abolhusain'''
 '''https://github.com/CjDubaiRIT/GROUP-10.git''' '''CJ'''
-'''github link here''' '''Shuja Ahmad'''
+'''https://github.com/sa7317/group10activity2.py/blob/main/group10-activity2.py''' '''Shuja Ahmad'''
 
 
 
